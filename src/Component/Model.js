@@ -65,6 +65,8 @@ function Model() {
       };
     }
   };
+
+  console.log(select);
   return (
     <Container show={start}>
       <Zoom top>
@@ -84,7 +86,7 @@ function Model() {
               type="file"
               accept=".png , .jpg, .jpeg"
               ref={filepicker}
-              onChange={addImage}
+              onChange={() => addImage}
               hidden
             />
           </Header>
@@ -95,6 +97,7 @@ function Model() {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Captions"
             />
+
             <Button type="button" disabled={!select} onClick={SubmitModel}>
               {loading ? " Uploading" : " Upload pic "}
             </Button>

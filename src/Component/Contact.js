@@ -17,6 +17,7 @@ function Contact() {
     }));
     setSuggestion(suggestion);
   }, []);
+  const img = "/image/avatar.webp";
   return (
     <Container>
       <Header>
@@ -30,7 +31,7 @@ function Contact() {
       <List>
         {suggestion.map((profile) => (
           <Make>
-            <Avatars key={profile.id} src={profile.avatar} />
+            <Avatars key={profile.id} src={img} />
             <Span>{profile.username}</Span>
           </Make>
         ))}

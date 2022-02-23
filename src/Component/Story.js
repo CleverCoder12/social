@@ -2,7 +2,8 @@ import { Avatar } from "@material-ui/core";
 import React from "react";
 import styled from "styled-components";
 
-function Story({ name, img }) {
+function Story({ name }) {
+  const img = "/image/avatar.webp";
   return (
     <Container show={img}>
       <Wrapper>

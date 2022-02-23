@@ -54,7 +54,7 @@ function Posts({ img, name, avatar, caption, id }) {
   }, [id]);
 
   const Delete = async () => {
-    const emails = "clevertino56@gmail.com";
+    const emails = "your email here";
 
     if (email === emails) {
       await deleteDoc(doc(db, "post", id));
